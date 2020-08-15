@@ -1,1 +1,22 @@
+level0
+  
+level1
+  gtVrDuiDfck831PqWsLEZy5gyDz1clto
+import requests
+import re
+username = 'natas0'
+password = username
+url = 'http://%s.natas.labs.overthewire.org' % username
+reponse = requests.get(url, auth = (username, password))
+content = reponse.text
+#print(content)
+print(re.findall('<!--The password for natas1 is (.*) -->', content)[0])
 
+level2
+  ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+
+level3
+  sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+  
+level4
+  Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
